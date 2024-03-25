@@ -1,0 +1,57 @@
+{
+  "home": {
+    "title": "Welcome to My Portfolio",
+    "description": "I am MGispert, a frontend developer with Dr.Frankenstein’s syndrome. I love making things come alive."
+  },
+  "progress": {
+    "title": "Application Progress",
+    "description": "Welcome to the Application Progress section. Here, you'll find an overview of my current job application status, including details such as the companies I've applied to, application dates, statuses, positions, required technology stacks, salaries, and work arrangements. This section provides insights into my ongoing job search journey and highlights my proactive approach towards exploring new opportunities in the frontend development field."
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "description": "Explore my professional journey in the frontend development and education sectors. From my role as a Frontend Developer at Backercamp to my experience as an English Literature Teacher at Generalitat de Catalunya, discover how my diverse background and skill set contribute to my effectiveness as a frontend developer.",
+    "jobs": [
+      {
+        "title": "Frontend Developer at Backercamp",
+        "description": "Championed diverse projects utilizing a spectrum of technologies including JavaScript, React, HTML, CSS, Jest, and React Testing Library. Maintained a commitment to continuous learning and self-challenge. (2022-2024)"
+      },
+      {
+        "title": "Web Development TA at Ironhack",
+        "description": "Provided valuable support to fellow students as a Teaching Assistant post-Web Development Bootcamp. Assisted in helping aspiring developers navigate career changes with insights gained from personal experience. (2022)"
+      },
+      {
+        "title": "English Literature Teacher at Generalitat de Catalunya",
+        "description": "Developed lesson plans, catered to students with special needs, and played a crucial role in guiding pupils through their formative teenage years. Emphasized values beyond the standard curriculum. (2010-2021)"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Feel free to reach out to me for any inquiries, collaboration opportunities, or just to say hello. You can contact me via phone, email, or connect with me on social media. I'm based in Barcelona, Spain, and I'm excited to hear from you!"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "What can I bring to the table?",
+        "answer": "As a frontend developer with a passion for innovation and problem-solving, I bring a unique blend of technical expertise, creativity, and adaptability to every project..."
+      },
+      {
+        "question": "What is my ideal work environment?",
+        "answer": "My ideal work environment is one that fosters creativity, encourages open communication, and values diversity and inclusion..."
+      },
+      {
+        "question": "Where do I see myself in 5 years?",
+        "answer": "In five years, I envision myself furthering my career as a frontend developer and emerging as a leader in the tech industry..."
+      },
+      {
+        "question": "How do I handle tight deadlines and high-pressure situations?",
+        "answer": "I thrive in fast-paced environments and excel under pressure. When faced with tight deadlines or high-pressure situations, I remain calm, focused, and organized..."
+      },
+      {
+        "question": "What motivates me as a frontend developer?",
+        "answer": "As a frontend developer, I am motivated by the opportunity to create impactful and user-centric experiences that enhance the lives of users and drive business success..."
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "columns": [
+    "Company",
+    "Date Applied",
+    "Status",
+    "Position",
+    "Stack Needed",
+    "Salary",
+    "Location"
+  ],
+  "applications": [
+    {
+      "company": "Company A",
+      "dateApplied": "2024-03-01",
+      "status": "In Progress",
+      "position": "Frontend Developer",
+      "stackNeeded": "JavaScript, React",
+      "salary": "$70,000",
+      "location": "Remote"
+    }
+  ]
+}
