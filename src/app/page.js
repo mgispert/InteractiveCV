@@ -1,15 +1,13 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import HomePage from "../components/homepage/homePage";
-import Progress from "@/components/progress/progressPage";
-import Experience from "@/components/experience/experiencePage";
-import Contact from "@/components/contact/contactPage";
-import Faq from "@/components/FAQ/faq";
+import Hero from "@/components/hero";
+import Progress from "@/components/progress";
+import Experience from "@/components/experience";
+import Contact from "@/components/contact";
+import Faq from "@/components/faq";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <HomePage />
+    <main>
+      <Hero />
       <Progress />
       <Experience />
       <Faq />
