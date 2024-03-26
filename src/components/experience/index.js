@@ -1,13 +1,13 @@
 import React from "react";
-import { experience } from "../utils/CONTENT.json";
+import content from "@/content/index.json";
 
 const Experience = () => (
   <section>
     <div>
-      <h2>{experience.title}</h2>
-      <p>{experience.description}</p>
+      <h2>{content.experience.title}</h2>
+      <p>{content.experience.description}</p>
       <ul>
-        {experience.jobs.map((job, index) => (
+        {content.experience.jobs.map((job, index) => (
           <li key={index}>
             <h3>{job.title}</h3>
             <p>{job.description}</p>

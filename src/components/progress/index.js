@@ -1,23 +1,22 @@
 import React from "react";
-import progressData from "./progressData.json";
-import { progress } from "../utils/CONTENT.json";
+import progress from "@/content/progress.json";
+import content from "@/content/index.json";
 
 const Progress = () => (
   <section>
     <div>
-      <h2>{progress.title}</h2>
-      <p>{progress.description}</p>
-
+      <h2>{content.progress.title}</h2>
+      <p>{content.progress.description}</p>
       <table>
         <thead>
           <tr>
-            {progressData.columns.map((column, index) => (
+            {progress.columns.map((column, index) => (
               <th key={index}>{column}</th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {progressData.applications.map((application, index) => (
+          {progress.applications.map((application, index) => (
             <tr key={index}>
               <td>{application.company}</td>
               <td>{application.dateApplied}</td>
