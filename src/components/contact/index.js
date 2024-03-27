@@ -1,18 +1,24 @@
 import React from "react";
+import { Box, Heading, Text, Divider, List, ListItem } from "@chakra-ui/react";
 import content from "@/content/index.json";
 
 const Contact = () => (
-  <section>
-    <div>
-      <h2>{content.contact.title}</h2>
-      <p>{content.contact.description}</p>
-      <ul>
-        <li>Phone: 0034-650577215</li>
-        <li>Email: mcg-511@hotmail.com</li>
-        <li>Location: Barcelona, Spain</li>
-      </ul>
-    </div>
-  </section>
+  <>
+    <Box p="6">
+      <Heading as="h2" size="lg" mb="4">
+        {content.contact.title}
+      </Heading>
+      <Text mb="4">{content.contact.description}</Text>
+      <List>
+        {content.contact.options.map((option, index) => (
+          <ListItem key={index}>
+            <Text>{option}</Text>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+    <Divider />
+  </>
 );
 
 export default Contact;

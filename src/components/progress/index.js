@@ -1,36 +1,47 @@
 import React from "react";
+import {
+  Box,
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  Heading,
+  Text,
+} from "@chakra-ui/react";
 import progress from "@/content/progress.json";
 import content from "@/content/index.json";
 
 const Progress = () => (
-  <section>
-    <div>
-      <h2>{content.progress.title}</h2>
-      <p>{content.progress.description}</p>
-      <table>
-        <thead>
-          <tr>
-            {progress.columns.map((column, index) => (
-              <th key={index}>{column}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {progress.applications.map((application, index) => (
-            <tr key={index}>
-              <td>{application.company}</td>
-              <td>{application.dateApplied}</td>
-              <td>{application.status}</td>
-              <td>{application.position}</td>
-              <td>{application.stackNeeded}</td>
-              <td>{application.salary}</td>
-              <td>{application.location}</td>
-            </tr>
+  <Box p="6">
+    <Heading as="h2" size="lg" mb="4">
+      {content.progress.title}
+    </Heading>
+    <Text mb="6">{content.progress.description}</Text>
+    <Table variant="simple">
+      <Thead>
+        <Tr>
+          {progress.columns.map((column, index) => (
+            <Th key={index}>{column}</Th>
           ))}
-        </tbody>
-      </table>
-    </div>
-  </section>
+        </Tr>
+      </Thead>
+      <Tbody>
+        {progress.applications.map((application, index) => (
+          <Tr key={index}>
+            <Td>{application.company}</Td>
+            <Td>{application.dateApplied}</Td>
+            <Td>{application.status}</Td>
+            <Td>{application.position}</Td>
+            <Td>{application.stackNeeded}</Td>
+            <Td>{application.salary}</Td>
+            <Td>{application.location}</Td>
+          </Tr>
+        ))}
+      </Tbody>
+    </Table>
+  </Box>
 );
 
 export default Progress;

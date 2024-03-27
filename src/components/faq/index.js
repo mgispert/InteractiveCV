@@ -1,22 +1,36 @@
 import React from "react";
+import {
+  Box,
+  Heading,
+  Text,
+  Divider,
+  List,
+  ListItem,
+  ListIcon,
+} from "@chakra-ui/react";
+import { FaQuestion } from "react-icons/fa6";
 import content from "@/content/index.json";
 
-const Faq = () => {
-  return (
-    <section>
-      <div>
-        <h2>{content.faq.title}</h2>
-        <div>
-          {content.faq.questions.map((item, index) => (
-            <div key={index}>
-              <h3>{item.question}</h3>
-              <p>{item.answer}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+const Faq = () => (
+  <>
+    <Box p="6">
+      <Heading as="h2" size="lg" mb="4">
+        {content.faq.title}
+      </Heading>
+      <List>
+        {content.faq.questions.map((item, index) => (
+          <ListItem key={index}>
+            <Heading as="h3" size="md" mb="2">
+              <ListIcon as={FaQuestion} color="gray" /> {item.question}
+            </Heading>
+            <Text>{item.answer}</Text>
+            <br />
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+    <Divider />
+  </>
+);
 
 export default Faq;
