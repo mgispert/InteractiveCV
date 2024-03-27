@@ -12,7 +12,7 @@ import { MdOutlineWorkOutline } from "react-icons/md";
 import content from "@/content/index.json";
 
 const Experience = () => (
-  <>
+  <section id="Experience">
     <Box p="6">
       <Heading as="h2" size="lg" mb="4">
         {content.experience.title}
@@ -31,7 +31,7 @@ const Experience = () => (
       </List>
     </Box>
     <Divider />
-  </>
+  </section>
 );
 
 export default Experience;
