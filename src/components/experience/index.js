@@ -1,21 +1,37 @@
 import React from "react";
+import {
+  Box,
+  Heading,
+  Text,
+  List,
+  ListItem,
+  Divider,
+  ListIcon,
+} from "@chakra-ui/react";
+import { MdOutlineWorkOutline } from "react-icons/md";
 import content from "@/content/index.json";
 
 const Experience = () => (
-  <section>
-    <div>
-      <h2>{content.experience.title}</h2>
-      <p>{content.experience.description}</p>
-      <ul>
+  <>
+    <Box p="6">
+      <Heading as="h2" size="lg" mb="4">
+        {content.experience.title}
+      </Heading>
+      <Text mb="6">{content.experience.description}</Text>
+      <List>
         {content.experience.jobs.map((job, index) => (
-          <li key={index}>
-            <h3>{job.title}</h3>
-            <p>{job.description}</p>
-          </li>
+          <ListItem key={index}>
+            <Heading as="h3" size="md" mb="2">
+              <ListIcon as={MdOutlineWorkOutline} color="gray" /> {job.title}
+            </Heading>
+            <Text>{job.description}</Text>
+            <br />
+          </ListItem>
         ))}
-      </ul>
-    </div>
-  </section>
+      </List>
+    </Box>
+    <Divider />
+  </>
 );
 
 export default Experience;
