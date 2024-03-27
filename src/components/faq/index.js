@@ -12,7 +12,7 @@ import { FaQuestion } from "react-icons/fa6";
 import content from "@/content/index.json";
 
 const Faq = () => (
-  <>
+  <section id="FAQ">
     <Box p="6">
       <Heading as="h2" size="lg" mb="4">
         {content.faq.title}
@@ -30,7 +30,7 @@ const Faq = () => (
       </List>
     </Box>
     <Divider />
-  </>
+  </section>
 );
 
 export default Faq;

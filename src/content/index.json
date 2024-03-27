@@ -1,4 +1,5 @@
 {
+  "navbar": ["Progress", "Experience", "FAQ", "Contact"],
   "home": {
     "title": "Welcome to MGispert",
     "description": "I am a frontend developer with Dr.Frankenstein’s syndrome. I love making things come alive."
@@ -39,23 +40,23 @@
     "questions": [
       {
         "question": "What can I bring to the table?",
-        "answer": "As a frontend developer with a passion for innovation and problem-solving, I bring a unique blend of technical expertise, creativity, and adaptability to every project..."
+        "answer": "As a frontend developer with a passion for innovation and problem-solving, I bring a unique blend of technical expertise, creativity, and adaptability to every project. My experience in various technologies and my ability to collaborate effectively with team members enable me to contribute positively to project success."
       },
       {
         "question": "What is my ideal work environment?",
-        "answer": "My ideal work environment is one that fosters creativity, encourages open communication, and values diversity and inclusion..."
+        "answer": "My ideal work environment is one that fosters creativity, encourages open communication, and values diversity and inclusion. I thrive in an environment where ideas are freely exchanged, feedback is constructive, and collaboration is encouraged. A supportive and inclusive workplace culture motivates me to perform at my best and contributes to my overall job satisfaction."
       },
       {
         "question": "Where do I see myself in 5 years?",
-        "answer": "In five years, I envision myself furthering my career as a frontend developer and emerging as a leader in the tech industry..."
+        "answer": "In five years, I envision myself furthering my career as a frontend developer and emerging as a leader in the tech industry. I aspire to take on challenging projects, lead teams, and contribute to the development of innovative solutions that have a positive impact on users and businesses. Continuous learning and professional growth are integral parts of my long-term career goals."
       },
       {
         "question": "How do I handle tight deadlines and high-pressure situations?",
-        "answer": "I thrive in fast-paced environments and excel under pressure. When faced with tight deadlines or high-pressure situations, I remain calm, focused, and organized..."
+        "answer": "I thrive in fast-paced environments and excel under pressure. When faced with tight deadlines or high-pressure situations, I remain calm, focused, and organized. I prioritize tasks effectively, break down complex problems into manageable steps, and communicate proactively with stakeholders to ensure clarity and alignment. Additionally, I leverage my problem-solving skills and resourcefulness to overcome challenges and deliver high-quality results within the specified timeframe."
       },
       {
         "question": "What motivates me as a frontend developer?",
-        "answer": "As a frontend developer, I am motivated by the opportunity to create impactful and user-centric experiences that enhance the lives of users and drive business success..."
+        "answer": "As a frontend developer, I am motivated by the opportunity to create impactful and user-centric experiences that enhance the lives of users and drive business success. I derive satisfaction from turning ideas into tangible products, solving complex problems, and continuously improving the user experience. The dynamic nature of the frontend development field, coupled with the ever-evolving technology landscape, keeps me engaged and motivated to stay at the forefront of innovation."
       }
     ]
   }
