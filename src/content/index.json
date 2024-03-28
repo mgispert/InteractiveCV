@@ -1,12 +1,29 @@
 {
-  "navbar": ["Progress", "Experience", "FAQ", "Contact"],
+  "navbar": ["Podium", "Experience", "FAQ", "Contact"],
   "home": {
     "title": "Welcome to MGispert",
     "description": "I am a frontend developer with Dr.Frankenstein’s syndrome. I love making things come alive."
   },
-  "progress": {
-    "title": "Application Progress",
-    "description": "Welcome to the Application Progress section. Here, you'll find an overview of my current job application status, including details such as the companies I've applied to, application dates, statuses, positions, required technology stacks, salaries, and work arrangements. This section provides insights into my ongoing job search journey and highlights my proactive approach towards exploring new opportunities in the frontend development field."
+  "podium": {
+    "title": "Aspirations Podium",
+    "description": "Welcome to the Aspirations Podium, where I proudly showcase the top three companies I aspire to work for. Each step of this podium represents a dream opportunity, embodying my passion, ambition, and vision for the future of my career.",
+    "podiumItems": [
+      {
+        "title": "Penguin Random House",
+        "intro": "Penguin Random House is a global publishing powerhouse known for its diverse range of titles and commitment to literature.",
+        "href": "https://www.penguinrandomhouse.com/about-us/our-story/"
+      },
+      {
+        "title": "Bloomsbury Publishing",
+        "intro": "Bloomsbury Publishing is renowned for its quality publications and contributions to the literary world.",
+        "href": "https://www.bloomsbury.com/uk/connect/about-us/overview/#"
+      },
+      {
+        "title": "Duolingo",
+        "intro": "Duolingo revolutionized language learning with its innovative platform and accessibility.",
+        "href": "https://careers.duolingo.com/about"
+      }
+    ]
   },
   "experience": {
     "title": "Professional Experience",
@@ -33,7 +50,9 @@
       "Phone: 0034-650577215",
       "Email: mcg-511@hotmail.com",
       "Location: Barcelona, Spain"
-    ]
+    ],
+    "linkedin": "https://www.linkedin.com/in/mgispert/",
+    "github": "https://github.com/mgispert"
   },
   "faq": {
     "title": "Frequently Asked Questions",
