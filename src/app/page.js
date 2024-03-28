@@ -1,6 +1,6 @@
 "use client";
 import Title from "@/components/title";
-import Progress from "@/components/progress";
+import Podium from "@/components/podium";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
 import Faq from "@/components/faq";
@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       <Title />
       <Navbar />
-      <Progress />
+      <Podium />
       <Experience />
       <Faq />
       <Contact />

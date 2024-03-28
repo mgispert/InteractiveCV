@@ -1,7 +1,18 @@
 import React from "react";
-import { Box, Heading, Text, Divider, List, ListItem } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Divider,
+  List,
+  ListItem,
+  Link,
+  Flex,
+} from "@chakra-ui/react";
 import content from "@/content/index.json";
 import Form from "./form";
+import NextLink from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => (
   <section id="Contact">
@@ -16,6 +27,16 @@ const Contact = () => (
             <Text>{option}</Text>
           </ListItem>
         ))}
+        <ListItem>
+          <Flex gap={4} mt={3} justifyContent="center">
+            <Link as={NextLink} href={content.contact.linkedin} target="_blank">
+              <FaLinkedin />
+            </Link>
+            <Link as={NextLink} href={content.contact.github} target="_blank">
+              <FaGithub />
+            </Link>
+          </Flex>
+        </ListItem>
       </List>
       <Form />
     </Box>

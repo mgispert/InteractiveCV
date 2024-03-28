@@ -33,21 +33,6 @@ const theme = extendTheme({
       },
     },
   },
-  components: {
-    Table: {
-      baseStyle: {
-        th: {
-          bg: "tableHeaderBg",
-          borderBottomWidth: "1px",
-          borderColor: "border",
-        },
-        td: {
-          borderBottomWidth: "1px",
-          borderColor: "border",
-        },
-      },
-    },
-  },
 });
 
 export default theme;

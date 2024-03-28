@@ -13,18 +13,25 @@ const Form = () => (
       <FormLabel>Name:</FormLabel>
       <Input type="text" name="name" />
     </FormControl>
-
     <FormControl id="email" isRequired>
       <FormLabel>Email:</FormLabel>
       <Input type="email" name="email" />
     </FormControl>
-
     <FormControl id="message" isRequired>
       <FormLabel>Message:</FormLabel>
       <Textarea name="message" />
     </FormControl>
-
-    <Button type="submit" mt={4}>
+    <Button
+      variant="outline"
+      type="submit"
+      mt={4}
+      color="#cdcdcd"
+      _hover={{
+        color: "black",
+        backgroundColor: "white",
+        transition: "background-color 2s",
+      }}
+    >
       Contact Me!
     </Button>
   </form>
