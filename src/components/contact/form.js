@@ -32,7 +32,7 @@ const Form = () => (
         transition: "background-color 2s",
       }}
     >
-      Contact Me!
+      Contact Me !
     </Button>
   </form>
 );
