@@ -7,20 +7,20 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 300) {
+      if (window?.scrollY > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
     };
 
-    window.addEventListener("scroll", toggleVisibility);
+    window?.addEventListener("scroll", toggleVisibility);
 
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    return () => window?.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({
+    window?.scrollTo({
       top: 0,
       behavior: "smooth",
     });
@@ -42,4 +42,4 @@ const ScrollToTop = () => {
   );
 };
 
-export default ScrollToTop;
+export default typeof window !== "undefined" ? ScrollToTop : null;

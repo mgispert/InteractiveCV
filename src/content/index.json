@@ -1,5 +1,5 @@
 {
-  "navbar": ["Podium", "Experience", "FAQ", "Contact"],
+  "navbar": ["Podium", "Experience", "Analytics", "FAQ", "Contact"],
   "home": {
     "title": "Welcome to MGispert",
     "description": "I am a frontend developer with Dr.Frankenstein’s syndrome. I love making things come alive."
@@ -42,6 +42,10 @@
         "description": "Developed lesson plans, catered to students with special needs, and played a crucial role in guiding pupils through their formative teenage years. Emphasized values beyond the standard curriculum. (2010-2021)"
       }
     ]
+  },
+  "analytics": {
+    "title": "Analytics",
+    "description": "Explore analytics depicting my journey through job applications. Gain valuable insights into the number of companies applied to, rejections faced, and responses received and vanished. Dive into the data-driven representation of my career aspirations and experiences."
   },
   "contact": {
     "title": "Get In Touch",
