@@ -1,3 +1,4 @@
+"use client";
 import { Box, Heading, Text, Divider } from "@chakra-ui/react";
 import RadialBarChart from "./chart";
 import content from "@/content/index.json";
