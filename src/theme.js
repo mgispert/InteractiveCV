@@ -30,6 +30,7 @@ const theme = extendTheme({
         color: "text",
         bg: "background",
         margin: "0 32px",
+        scrollBehavior: "smooth",
       },
     },
   },

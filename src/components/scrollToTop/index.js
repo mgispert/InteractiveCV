@@ -1,5 +1,6 @@
+"use client";
 import { useEffect, useState } from "react";
-import { Button } from "@chakra-ui/react";
+import { Button, Link } from "@chakra-ui/react";
 import { FaArrowUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
@@ -7,36 +8,26 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 300) {
+      if (window?.scrollY > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
     };
 
-    window.addEventListener("scroll", toggleVisibility);
+    window?.addEventListener("scroll", toggleVisibility);
 
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    return () => window?.removeEventListener("scroll", toggleVisibility);
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <>
       {isVisible && (
-        <Button
-          onClick={scrollToTop}
-          position="fixed"
-          bottom="20px"
-          right="20px"
-        >
-          <FaArrowUp />
-        </Button>
+        <Link href="#">
+          <Button position="fixed" bottom="20px" right="20px">
+            <FaArrowUp />
+          </Button>
+        </Link>
       )}
     </>
   );
