@@ -7,28 +7,39 @@ const PodiumItems = () => {
   return (
     <section id="podium">
       <Box p="6">
-        <Flex justifyContent="center">
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          justifyContent="center"
+          flexWrap="wrap"
+        >
           {content.podium.podiumItems.map((option, index) => (
-            <Link
-              as={NextLink}
-              href={option.href}
+            <Box
               key={index}
-              target="_blank"
-              _hover={{ textDecoration: "none" }}
+              width={{ base: "100%", md: "auto" }}
+              maxWidth={{ base: "100%", md: "30%" }}
+              margin={{ base: "10px 0", md: "10px" }}
+              overflowY="auto"
+              maxHeight="300px"
             >
-              <Box
-                p={4}
-                margin={5}
-                border="1px solid"
-                borderRadius="10px"
-                _hover={{ backgroundColor: "#212121" }}
+              <Link
+                as={NextLink}
+                href={option.href}
+                target="_blank"
+                _hover={{ textDecoration: "none" }}
               >
-                <Heading as="h3" size="md" mb="2">
-                  {option.title}
-                </Heading>
-                <Text>{option.intro}</Text>
-              </Box>
-            </Link>
+                <Box
+                  p={4}
+                  border="1px solid"
+                  borderRadius="10px"
+                  _hover={{ backgroundColor: "#212121" }}
+                >
+                  <Heading as="h3" size="md" mb="2">
+                    {option.title}
+                  </Heading>
+                  <Text>{option.intro}</Text>
+                </Box>
+              </Link>
+            </Box>
           ))}
         </Flex>
       </Box>

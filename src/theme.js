@@ -29,7 +29,7 @@ const theme = extendTheme({
         lineHeight: "tall",
         color: "text",
         bg: "background",
-        margin: "0 32px",
+        margin: "0",
         scrollBehavior: "smooth",
       },
     },
