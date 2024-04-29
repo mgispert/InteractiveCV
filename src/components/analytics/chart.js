@@ -25,7 +25,7 @@ const RadialBarChart = () => {
           },
           dataLabels: {
             name: {
-              show: false,
+              show: true,
             },
             value: {
               show: false,
@@ -38,7 +38,7 @@ const RadialBarChart = () => {
         theme.colors.gray[500],
         theme.colors.gray[400],
       ],
-      labels: ["Applied", "Rejected", "Answered & Disappeared"],
+      labels: ["Applied", "Rejected", "No response"],
       legend: {
         show: true,
         floating: true,
